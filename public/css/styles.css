@@ -1,0 +1,324 @@
+:root {
+	--amarillo: #eac926;
+	--azul: #03264c;
+	--celeste: #1259c3;
+	--gris_oscuro: #666;
+	--gris_claro: #ebebeb;
+	--verde: #39b54a;
+	--body-font-size: 12px;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--gris_claro);
+	font-family: "Roboto", sans-serif;
+	font-size: var(--body-font-size);
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+header {
+	background-color: var(--amarillo);
+	padding-bottom: 1rem;
+}
+.banner {
+	margin-left: -8px;
+	width: 100vw;
+}
+main {
+	min-height: 100%;
+}
+main section {
+	width: 90%;
+	margin: auto;
+}
+
+.title {
+	color: var(--gris_oscuro);
+	text-align: center;
+	font-size: 24px;
+}
+
+.descriptions {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.burger-menu {
+	margin: auto;
+	/* margin-bottom: 10px; */
+	width: 2.5rem;
+	height: 2.5rem;
+	text-align: center;
+	background-color: var(--celeste);
+	border-radius: 20%;
+	cursor: pointer;
+}
+
+.menu-icon {
+	margin-top: 0.5rem;
+	font-size: 1.5rem;
+	color: white;
+}
+
+nav {
+	padding: 10px;
+}
+nav ul {
+	display: none;
+	list-style: none;
+	padding-left: 0;
+}
+.navitem a {
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+}
+
+.buscador {
+	display: flex;
+	
+}
+span {
+	text-transform: uppercase;
+	text-decoration: solid;
+}
+
+
+
+.logo {
+	margin: 1rem;
+	width: 45%;
+}
+
+.search {
+	align-self: center;
+	width: 45%;
+}
+.search-bar {
+	margin-bottom: 2px;
+	border-radius: 3px;
+	border: 0;
+	height: 2rem;
+	width: 80%;
+}
+
+.search-btn {
+	border: 0;
+	background: #fff;
+	height: 2rem;
+	border-radius: 3px;
+}
+
+.subline {
+	text-align: center;
+}
+
+.product {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.product-image {
+	width: 100%;
+}
+
+.truck-icon {
+	position: relative;
+	color: var(--verde);
+	border: solid 1.5px var(--verde);
+	border-radius: 50480%;
+	font-size: 1.2rem;
+	padding: 7px;
+	right: -80%;
+	top: 15px;
+	transition: transform 200ms ease-in-out;
+}
+
+.product-text {
+	border-top: solid 1px var(--gris_claro);
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+}
+.price {
+	font-size: 18px;
+	flex-grow: 0.3;
+	margin-left: 10px;
+}
+.discounts {
+	font-size: 16px;
+	align-self: center;
+	color: var(--verde);
+	flex-grow: 0.7;
+	margin: 0;
+}
+
+.product-name {
+	display: none;
+	font-size: 16px;
+	margin: 10px;
+	color: var(--gris_oscuro);
+	transition: all 250;
+}
+
+.features {
+	padding: 1rem;
+}
+
+.feature {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.feature-icon {
+	content: "";
+	color: var(--celeste);
+	display: inline;
+	font-size: 2rem;
+	transition: color filter 250 ease-in-out;
+}
+
+.recently-viewed,
+.offers {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	min-height: 20.5rem;
+}
+
+footer {
+	margin-top: 2rem;
+	background-color: #fff;
+}
+
+.copyright {
+	padding: 0 0 10px 10px;
+	text-align: center;
+}
+
+@media (min-width: 480px) {
+	nav {
+		display: flex;
+		margin: 0;
+		margin-top: 2rem;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	.left-nav {
+		display: flex;
+		gap: 1rem;
+		padding-left: 1rem;
+		margin: 0;
+	}
+
+	.right-nav {
+		display: flex;
+		gap: 1rem;
+		align-self: flex-end;
+		margin: 0;
+		margin-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.topbar {
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 1rem;
+	}
+
+	.logo-search {
+		display: flex;
+		width: 70%;
+
+	}
+
+	.logo {
+		margin: 0;
+		width: 80%;
+	}
+
+	.search {
+		align-self: center;
+		width: 100%;
+	}
+	.search-bar {
+		margin-bottom: 2px;
+		border-radius: 3px;
+		border: 0;
+		height: 2rem;
+		width: 80%;
+	}
+
+	.subline {
+		width: 30%;
+		margin-right: 2rem;
+		align-self: center;
+	}
+
+	.search-btn {
+		border: 0;
+		background: #fff;
+		color: var(--gris_oscuro);
+		height: 2rem;
+		border-radius: 3px;
+	}
+
+	.product {
+		width: calc(90% / 2);
+		
+	}
+
+	.burger-menu {
+		display: none;
+	}
+	.recently-viewed,
+	.offers {
+		flex-direction: row;
+	}
+
+	.truck-icon {
+		right: -70%;
+	}
+}
+
+@media (min-width: 768px) {
+	.product {
+		width: calc(90% / 4);
+	}
+	.product:hover {
+		box-shadow: 0px 0px 10px rgb(100, 100, 100);
+	}
+	.product:hover .product-name {
+		display: block;
+		animation: display_animation 0.5s;
+	}
+	.truck-icon:hover {
+		transform: rotate(-90deg);
+	}
+
+	.features {
+		display: flex;
+		gap: 1rem;
+	}
+	.feature-icon:hover {
+		color: var(--amarillo);
+		filter: brightness(0.8);
+	}
+}
+
+@keyframes display_animation {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

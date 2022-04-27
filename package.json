@@ -1,0 +1,20 @@
+{
+	"name": "mercado_liebre",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"startdev": "nodemon app.js",
+		"test": "nodemon app.js"
+	},
+	"keywords": [],
+	"author": "Lucas",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	},
+	"dependencies": {
+		"express": "^4.17.3"
+	}
+}
